@@ -2,19 +2,19 @@ package br.ufpb.dcx.aps.atividades.composicaosimples.rede;
 
 import java.util.*;
 
-public class Roteador extends Elemento {
+public class Roteador extends ComponenteRede {
 
-    private List<Elemento> componentes = new LinkedList<>();
+    private List<ComponenteRede> componentes = new LinkedList<>();
 
     public Roteador(String nome, String id, String mac) {
         super(nome, id, mac);
     }
-    public void addComponente(Elemento x) {
+    public void addComponente(ComponenteRede x) {
         componentes.add(x);
 
     }
 
-    public List<Elemento> getComponentes(){
+    public List<ComponenteRede> getComponentes(){
 
         return componentes;
     }
